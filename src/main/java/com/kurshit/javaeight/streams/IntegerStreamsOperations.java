@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 
-public class IntegerStreams {
+public class IntegerStreamsOperations {
 
 	public static void main(String[] args) {
 		
@@ -23,11 +23,15 @@ public class IntegerStreams {
 		
 		int size = 10;
 		System.out.println();
+		
+		// 10 excluded
 		for( int i=0; i< size; i++ ) {
 			System.out.print(i + " ");
 		}
 		
 		System.out.println();
+		
+		// 10 included
 		
 		for( int i=0; i<= size; i++ ) {
 			System.out.print(i + " ");
@@ -39,9 +43,12 @@ public class IntegerStreams {
 	public static void traverseUsingStreams() {
 		int size = 10;
 		System.out.println();
+		
+		//10 excluded		
 		IntStream.range(0, size)
 					.forEach(e -> System.out.print(e + " "));
 		
+		//10 included
 		System.out.println();
 		IntStream.rangeClosed(0, size)
 					.forEach(e -> System.out.print(e + " "));
@@ -165,24 +172,7 @@ public class IntegerStreams {
 		
 		//System.out.println(streamClosable.average());
 		
-		streamClosable.close();
-		
-		
-		
-		
-		
-				
-		
-				
-		
-		
-				
-		
-		
-		
-			
-					
-					
+		streamClosable.close();					
 				
 	}
 

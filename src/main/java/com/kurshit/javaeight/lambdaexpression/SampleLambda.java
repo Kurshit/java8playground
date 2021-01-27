@@ -8,8 +8,7 @@ package com.kurshit.javaeight.lambdaexpression;
  * This class shows the very basic syntax to write a lambda expressions.
  * The lamda's uses the Single Abstract Method Interface - an Intefrace with only one method in it.
  * 
- * The first impression seeing lambda was, 
- * 
+ *  
  * 
  */
 
